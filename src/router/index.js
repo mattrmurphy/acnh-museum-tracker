@@ -6,10 +6,6 @@ import Bugs from '../views/Bugs.vue'
 import Fossils from '../views/Fossils.vue'
 import Art from '../views/Art.vue'
 import Museum from '../views/museum/Index.vue'
-// import MuseumFish from '../views/museum/Fish.vue'
-// import MuseumBugs from '../views/museum/Bugs.vue'
-// import MuseumFossils from '../views/museum/Fossils.vue'
-// import MuseumArt from '../views/museum/Art.vue'
 import Section from '../views/museum/Section'
 
 Vue.use(VueRouter)
