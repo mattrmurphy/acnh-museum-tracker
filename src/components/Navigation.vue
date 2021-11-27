@@ -3,7 +3,9 @@
     class="flex flex-col md:flex-row md:items-center md:justify-between p-4 text-white bg-green-600"
   >
     <div class="flex justify-between items-center">
-      <router-link class="font-bold text-xl sm:text-lg" to="/">ACNH Museum Tracker</router-link>
+      <router-link class="font-bold text-xl sm:text-lg" to="/"
+        >ACNH Museum Tracker</router-link
+      >
       <div class="md:hidden">
         <button class="flex items-center p-1" @click="toggleMenu">
           <span v-show="!menuOpen">
@@ -18,56 +20,66 @@
     <div class="flex flex-row hidden md:flex">
       <router-link
         class="p-2 mr-1 font-semibold hover:bg-green-700 rounded"
-        :class="{ 'bg-green-700': $route.path === '/fish'}"
+        :class="{ 'bg-green-700': $route.path === '/fish' }"
         to="/fish"
-      >Fish</router-link>
+        >Fish</router-link
+      >
       <router-link
         class="p-2 mr-1 font-semibold hover:bg-green-700 rounded"
-        :class="{ 'bg-green-700': $route.path === 'bugs' }"
+        :class="{ 'bg-green-700': $route.path === '/bugs' }"
         to="/bugs"
-      >Bugs</router-link>
+        >Bugs</router-link
+      >
       <router-link
         class="p-2 mr-1 font-semibold hover:bg-green-700 rounded"
-        :class="{ 'bg-green-700': $route.path === 'fossls' }"
+        :class="{ 'bg-green-700': $route.path === '/fossils' }"
         to="/fossils"
-      >Fossils</router-link>
+        >Fossils</router-link
+      >
       <router-link
         class="p-2 mr-1 font-semibold hover:bg-green-700 rounded"
-        :class="{ 'bg-green-700': $route.path === 'art' }"
+        :class="{ 'bg-green-700': $route.path === '/art' }"
         to="/art"
-      >Art</router-link>
+        >Art</router-link
+      >
       <router-link
         class="p-2 font-semibold hover:bg-green-700 rounded"
-        :class="{ 'bg-green-700': $route.path.includes('museum')}"
+        :class="{ 'bg-green-700': $route.path.includes('museum') }"
         to="/museum"
-      >Museum</router-link>
+        >Museum</router-link
+      >
     </div>
     <div class="flex flex-col md:hidden mt-2 -mx-1" v-show="menuOpen">
       <router-link
         class="p-2 mr-1 font-semibold hover:bg-green-700 rounded"
-        :class="{ 'bg-green-700': $route.path === '/fish'}"
+        :class="{ 'bg-green-700': $route.path === '/fish' }"
         to="/fish"
-      >Fish</router-link>
+        >Fish</router-link
+      >
       <router-link
         class="p-2 mr-1 font-semibold hover:bg-green-700 rounded"
-        :class="{ 'bg-green-700': $route.path === 'bugs' }"
+        :class="{ 'bg-green-700': $route.path === '/bugs' }"
         to="/bugs"
-      >Bugs</router-link>
+        >Bugs</router-link
+      >
       <router-link
         class="p-2 mr-1 font-semibold hover:bg-green-700 rounded"
-        :class="{ 'bg-green-700': $route.path === 'fossls' }"
+        :class="{ 'bg-green-700': $route.path === '/fossils' }"
         to="/fossils"
-      >Fossils</router-link>
+        >Fossils</router-link
+      >
       <router-link
         class="p-2 mr-1 font-semibold hover:bg-green-700 rounded"
-        :class="{ 'bg-green-700': $route.path === 'art' }"
+        :class="{ 'bg-green-700': $route.path === '/art' }"
         to="/art"
-      >Art</router-link>
+        >Art</router-link
+      >
       <router-link
         class="p-2 font-semibold hover:bg-green-700 rounded"
-        :class="{ 'bg-green-700': $route.path.includes('museum')}"
+        :class="{ 'bg-green-700': $route.path.includes('museum') }"
         to="/museum"
-      >Museum</router-link>
+        >Museum</router-link
+      >
     </div>
   </nav>
 </template>
